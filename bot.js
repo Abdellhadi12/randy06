@@ -12,7 +12,7 @@ client.on('ready',  () => {
   
         });
 		var prefix = "!"
-const welcome = JSON.parse(welcomer.readFileSync('./welcomer.json' , 'utf8'));
+
  
 client.on('message', message => {
            if (!message.channel.guild) return;
