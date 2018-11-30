@@ -73,7 +73,7 @@ client.on('message', message => {
                     })
                   }
                   
-                })
+                });
                 
 
 client.on('guildMemberAdd',async member => {
