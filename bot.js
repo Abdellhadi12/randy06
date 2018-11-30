@@ -6,7 +6,7 @@ client.on('ready',  () => {
     console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
     console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
   });
- clien.on('ready', () => {
+ client.on('ready', () => {
         console.user.setGame(`Randy`,'https://www.twitch.tv/TEST-Broadcast');
           console.log('Im Ready!');
   
