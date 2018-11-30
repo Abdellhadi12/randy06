@@ -53,7 +53,7 @@ client.on('message', message => {
             
          
           
-        })
+        
 
         client.on('message', message => {
   
@@ -70,11 +70,7 @@ client.on('message', message => {
                     .catch(err => {
                       console.error(err);
                   });
-                    })
-                  }
-                  
-                });
-                
+                    
 
 client.on('guildMemberAdd',async member => {
     if(welcome[member.guild.id].onoff === 'Off') return;
