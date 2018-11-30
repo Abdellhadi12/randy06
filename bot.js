@@ -6,13 +6,8 @@ client.on('ready',  () => {
     console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
     console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
   });
- client.on('ready', () => {
-        console.user.setGame(`Randy`,'https://www.twitch.tv/TEST-Broadcast');
-          console.log('Im Ready!');
-  
-        });
-		var prefix = "!"
 
+ var prefix = "!"
  
 client.on('message', message => {
            if (!message.channel.guild) return;
