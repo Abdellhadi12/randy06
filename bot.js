@@ -50,8 +50,8 @@ client.on('message', message => {
             .catch(err => {
               console.error(err);
           });
-            })
-          }
+            
+         
           
         })
 
