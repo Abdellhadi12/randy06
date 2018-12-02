@@ -35,20 +35,23 @@ client.on("message", message => {
  
            ***General  Commands***
         [!setWelcomer]  --> {تفعيل الترحيب بالصوره }
-	    [!toggleWelcome] --> { تأكيد الترحيب }
+        [!toggleWelcome] --> { تأكيد الترحيب }
         [!toggleInvitedby] --> { تفعيل  تم دعوته من طرف } 
         [!autorole] --> { تفعيل اول واحد يخش ياخذ رتبه تلقائي }
-	    [!role]  --> {اعطاء شخص رتبة معينه باختيارك }
+        [!role]  --> {اعطاء شخص رتبة معينه باختيارك }
 
 *-*-*-*-*-*-*-*  *-*-*-*-*-*-*-*    *-*-*-*-*-*-*-*  *-*-*-*-*-*-*-*    
   
           ***Admin  Commands***
         [!clear]  --> {مسح الشات }
-	    [!ban]  --> {حظر عضو من السيرفر }
+        [!ban]  --> {حظر عضو من السيرفر }
         [!kick]  --> {طرد عضو من السيرفر }
         [!bc]  --> {رساله لجميع اعضاء السيرفر }
 
-  
+*-*-*-*-*-*-*-*  *-*-*-*-*-*-*-*    *-*-*-*-*-*-*-*  *-*-*-*-*-*-*-*    
+          ***Vip  Commands***
+   !invite --> دعوت البوت لسيرفرك 
+   !support --> دخول سيرفر الدعم
              _ _---------------- _ _
   BOT By: | <@399353508429824000>  |
 
@@ -434,4 +437,23 @@ client.on("message", (message) => {
         });
     }
 });
+client.on('message' , message => {
+    if (message.content === (prefix + "invite")) {
+        if(!message.channel.guild) return message.reply('This Command is Only For Servers');
+     const embed = new Discord.RichEmbed()
+ .setColor("RANDOM")
+ .setThumbnail(client.user.avatarURL)
+ .setAuthor(message.author.username, message.author.avatarURL)
+ .setTitle('Click Here To Invite The Bot')
+ .setURL('https://discordapp.com/oauth2/authorize?client_id=444182215476248576&scope=bot&permissions=9')
+  message.channel.sendEmbed(embed);
+   }
+});
+client.on('message', message => {
+  if (true) {
+if (message.content === (prefix + "support")) {
+     message.author.send('https://discord.gg/r7Cn5ca').catch(e => console.log(e.stack));
+    }
+   } 
+  });
 client.login(process.env.BOT_TOKEN);
