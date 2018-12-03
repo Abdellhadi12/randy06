@@ -62,8 +62,7 @@ client.on("message", message => {
    
    }
    });  
-   let welcome = JSON.parse(welcome.readFileSync('./welcomer.json' , 'utf8'));
- 
+   
 client.on('message', message => {
            if (!message.channel.guild) return;
 
