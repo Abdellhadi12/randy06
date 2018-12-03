@@ -4,6 +4,8 @@ const client = new Discord.Client();
 const prefix = '!'; 
 const premium = ['399353508429824000']
 const fs = require('fs')
+const mement = require('mement')
+
 //////////////////////////////////////
 client.on('ready', () => {
    console.log(`~~~~~~~~~~~~~~~~~`);
