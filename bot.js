@@ -395,7 +395,7 @@ client.on('guildMemberAdd',async member => {
  
   
  
-const wait = require('util').promisify(setTimeout);
+
  
 client.on('ready', () => {
   wait(1000);
