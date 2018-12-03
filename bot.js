@@ -109,12 +109,12 @@ client.on('message', message => {
           }
           
         })
-const premium = ['399353508429824000']
+
         client.on('message', message => {
   
             if(message.content.startsWith(prefix + "toggleInvitedby")) {
                 if(!message.channel.guild) return message.reply('**This Command Only For Servers**');
-                if(!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send(' لازم البرميوم ' );
+                if(!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send(' ماعندك صلاحيات  ' );
                 if(!welcome[message.guild.id]) welcome[message.guild.id] = {
                   by: 'Off'
                 }
