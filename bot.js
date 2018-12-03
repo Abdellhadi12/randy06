@@ -195,7 +195,6 @@ client.on('guildMemberAdd',async member => {
   const invites = {};
 
 const wait = require('util').promisify(setTimeout);
-const premium = ['399353508429824000']
 client.on('ready', () => {
   wait(1000);
 
