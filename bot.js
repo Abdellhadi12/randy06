@@ -228,7 +228,7 @@ member.addRole(member.guild.roles.find(`name`, ar[member.guild.id].role)).catch(
 })
 client.on('message', message => {
 if(!message.guild) return
-if(!ar[message.guild.id]) ar[message.guild.id] = {
+
 onoff: 'Off',
 role: 'Member'
 }
