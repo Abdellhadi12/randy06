@@ -230,7 +230,7 @@ client.on('message', message => {
 if(!message.guild) return
 
 onoff: 'Off',
-role: 'Member'
+
 }
 if(message.content.startsWith(prefix + `autorole`)) {
 let perms = message.member.hasPermission(`MANAGE_ROLES`)
